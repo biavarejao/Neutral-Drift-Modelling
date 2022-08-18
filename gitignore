@@ -1,0 +1,5 @@
+#ignoring all html files
+*.hmtl
+#all zip files
+*.zip
+
