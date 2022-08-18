@@ -8,6 +8,8 @@
   In each iteraction one individual in the population will be randomly choose to reproduce. Then, one individual in the population will be randomly choose to be replaced by the first individual chosen. 
   My project intends to simulate stochastically a case of neutral genetic drift. My first script "moranmodel.py" simply simulate stochastically n times a neutral drift in a population with size N and an initial i amount of A individual in a maximum time of tmax. The script save in the subdirectory figs a graph of the frequency of the allele x time. My second script "fixationfrequency.py" simulate stochastically n times a neutral drift in a population with size N, in different amounts of i individuals (iter_i different initial conditions are simulated), in a maximum time of tmax. In the end, the script plots and save in the subdirectory figs a graph with the initial frequency of the A allele in the population x the rate of fixation of the allele A in the population (times that the A allele fixated / n). We consider a fixation case if within the tmax time, the A allele has reached 100% of frequency in the population. In the graph we also plot the expected result according to theory. 
   
+# Project Structure
+  
   ```
 project/
      ├── py/
