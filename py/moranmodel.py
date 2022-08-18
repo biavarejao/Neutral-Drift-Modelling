@@ -14,6 +14,16 @@ from matplotlib import pyplot as plt
 # simulating n times  a neutral drift in a population of size N, with an allele A in initial frequency i/N in tmax time
 # we are supposing a small mutation rate, so no other mutants can arise during the simulation
 
+def main():
+    #defining parameters
+    N=40
+    i=4
+    tmax=1000
+    n=10
+    #calling function
+    neutral_drift_graph(N, i, tmax, n)
+        
+    
 def neutral_drift(N, i, tmax):
     cura=i
     a=[i/N]
@@ -49,5 +59,6 @@ def neutral_drift_graph(N, i, tmax, n):
     ## saving the graph in a known subdirectory figs
     plt.savefig('figs/simulationsgraph.png')
 
-    
+main()
+
     
