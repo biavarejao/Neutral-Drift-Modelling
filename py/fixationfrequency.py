@@ -14,6 +14,17 @@ from matplotlib import pyplot as plt
 # simulating neutral drift in a population with size N in a initial frequency i/N of the allele A
 # each initial frequency will be runned n times, we consider a fixation (success) if alelle A arrives to 100% until the tmax iteration
 
+def main():
+    #defining parameters
+    N=20
+    iter_i=20
+    tmax=1000
+    n=100
+    #calling function
+    frequency(N, iter_i, tmax, n)
+    
+    
+    
 def neutral_drift_suc(N, i, tmax,n):
     suc=0
     #simulating n times
@@ -66,4 +77,5 @@ def frequency (N, iter_i, tmax, n):
     ## saving the graph in a known subdirectory figs
     plt.savefig('figs/fixationgraph.png')
         
+main()
  
