@@ -55,7 +55,7 @@ def neutral_drift_graph(N, i, tmax, n):
     plt.title("Stochastic Simulations of Neutral Drift in a Population with %d Individuals"%N)
     plt.xlabel('time')
     plt.ylabel('frequency of the A allele in the population')
-    
+    plt.ylim([0,1])
     ## saving the graph in a known subdirectory figs
     plt.savefig('figs/simulationsgraph.png')
 
