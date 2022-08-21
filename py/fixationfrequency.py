@@ -16,8 +16,8 @@ from matplotlib import pyplot as plt
 
 def main():
     #defining parameters
-    N=20
-    iter_i=20
+    N=50
+    iter_i=50
     tmax=1000
     n=100
     #calling function
